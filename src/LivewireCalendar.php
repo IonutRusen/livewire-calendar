@@ -176,7 +176,7 @@ class LivewireCalendar extends Component
         $lastDayOfGrid = $this->gridEndsAt;
 
         $numbersOfWeeks = $lastDayOfGrid->diffInWeeks($firstDayOfGrid) + 1;
-        $days = $lastDayOfGrid->diffInDays($firstDayOfGrid) + 1;
+        $days = $lastDayOfGrid->endOfDay()->diffInDays($firstDayOfGrid->startOfDay()) + 1;
 
         if ($days % 7 != 0) {
             throw new Exception("Livewire Calendar not correctly configured. Check initial inputs.");
