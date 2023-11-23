@@ -17,8 +17,8 @@
     ],
     "require": {
         "php": "^8.0",
-        "illuminate/support": "^v10.33.0",
-        "livewire/livewire": "^2.0|^3.2"
+        "illuminate/support": "^v9.5",
+        "livewire/livewire": "^2.0"
     },
     "require-dev": {
         "orchestra/testbench": "^5.0|^6.0",
